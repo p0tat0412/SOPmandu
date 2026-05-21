@@ -1,0 +1,2241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOPmandu | Expert Study Abroad Application Writing</title>
+  <meta name="description"
+    content="Professional SOP, motivation letter, and scholarship essay writing for students applying to universities in USA, UK, Canada, Australia, Germany and more. 2000+ students helped, 95% acceptance rate.">
+  <meta name="keywords"
+    content="SOP writing, statement of purpose, study abroad, motivation letter, scholarship essay, visa SOP, university application">
+  <meta property="og:title" content="SOPmandu – Your Dream University Starts Here">
+  <meta property="og:description"
+    content="Expert SOP and application writing for students worldwide. 2000+ success stories.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,600&family=Nunito:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #FDFCF8;
+      --fg: #2C2C24;
+      --primary: #5D7052;
+      --primary-fg: #F3F4F1;
+      --secondary: #C18C5D;
+      --accent: #E6DCCD;
+      --muted: #F0EBE5;
+      --muted-fg: #78786C;
+      --border: #DED8CF;
+      --destructive: #A85448;
+      --shadow-soft: 0 4px 20px -2px rgba(93, 112, 82, 0.15);
+      --shadow-float: 0 10px 40px -10px rgba(193, 140, 93, 0.20);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.7;
+      font-size: 16px;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Grain texture overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      opacity: 0.035;
+      mix-blend-mode: multiply;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Fraunces', serif;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      font-weight: 800;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--muted-fg);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .container-sm {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---- NAV ---- */
+    nav {
+      position: sticky;
+      top: 1rem;
+      z-index: 100;
+      padding: 0 1.5rem;
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: rgba(253, 252, 248, 0.78);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(222, 216, 207, 0.55);
+      border-radius: 9999px;
+      padding: 0.6rem 1.2rem 0.6rem 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .nav-logo-icon {
+      width: 38px;
+      height: 38px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .nav-logo-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: white;
+    }
+
+    .nav-logo-text {
+      font-family: 'Fraunces', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--fg);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      padding: 0.4rem 0.9rem;
+      border-radius: 9999px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--muted-fg);
+      transition: all 0.2s;
+    }
+
+    .nav-links a:hover {
+      background: rgba(93, 112, 82, 0.09);
+      color: var(--primary);
+    }
+
+    .nav-cta {
+      background: var(--primary);
+      color: var(--primary-fg) !important;
+      padding: 0.5rem 1.2rem !important;
+      border-radius: 9999px !important;
+      font-weight: 700 !important;
+      font-size: 0.88rem !important;
+      box-shadow: var(--shadow-soft);
+      transition: all 0.25s !important;
+    }
+
+    .nav-cta:hover {
+      transform: scale(1.04);
+      box-shadow: 0 6px 24px -4px rgba(93, 112, 82, 0.28) !important;
+      background: var(--primary) !important;
+    }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.4rem;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--fg);
+      margin: 4px 0;
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(253, 252, 248, 0.97);
+      z-index: 200;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .mobile-menu a {
+      font-family: 'Fraunces', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--fg);
+      transition: color 0.2s;
+    }
+
+    .mobile-menu a:hover {
+      color: var(--primary);
+    }
+
+    .mobile-close {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      background: var(--muted);
+      border: none;
+      cursor: pointer;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .nav-cta-desktop {
+        display: none;
+      }
+    }
+
+    /* ---- BUTTONS ---- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.75rem 2rem;
+      border-radius: 9999px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      transition: all 0.25s;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--primary-fg);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .btn-primary:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 28px -4px rgba(93, 112, 82, 0.28);
+    }
+
+    .btn-primary:active {
+      transform: scale(0.97);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--secondary);
+      border: 2px solid var(--secondary);
+    }
+
+    .btn-outline:hover {
+      background: rgba(193, 140, 93, 0.08);
+      transform: scale(1.04);
+    }
+
+    .btn-outline:active {
+      transform: scale(0.97);
+    }
+
+    .btn-lg {
+      padding: 0.95rem 2.4rem;
+      font-size: 1.05rem;
+    }
+
+    /* ---- HERO ---- */
+    .hero {
+      padding: 5rem 1.5rem 6rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-blob-1 {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: rgba(93, 112, 82, 0.1);
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      top: -150px;
+      right: -150px;
+      filter: blur(60px);
+      pointer-events: none;
+    }
+
+    .hero-blob-2 {
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      background: rgba(193, 140, 93, 0.1);
+      border-radius: 40% 60% 70% 30% / 40% 70% 30% 60%;
+      bottom: -100px;
+      left: -100px;
+      filter: blur(60px);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(93, 112, 82, 0.1);
+      color: var(--primary);
+      border-radius: 9999px;
+      padding: 0.35rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-headline {
+      color: var(--fg);
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-headline em {
+      font-style: italic;
+      color: var(--primary);
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      margin-bottom: 1.8rem;
+      max-width: 500px;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.4rem;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .hero-stat {
+      background: white;
+      border: 1px solid rgba(222, 216, 207, 0.6);
+      border-radius: 1.4rem;
+      padding: 1rem 1.2rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-stat-num {
+      font-family: 'Fraunces', serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--primary);
+      display: block;
+      line-height: 1;
+      margin-bottom: 0.2rem;
+    }
+
+    .hero-stat-label {
+      font-size: 0.8rem;
+      color: var(--muted-fg);
+      font-weight: 600;
+    }
+
+    .hero-visual {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-card-main {
+      background: white;
+      border-radius: 2rem;
+      padding: 2rem;
+      box-shadow: var(--shadow-float);
+      border: 1px solid rgba(222, 216, 207, 0.5);
+      width: 100%;
+      max-width: 360px;
+      transform: rotate(-1.5deg);
+      position: relative;
+    }
+
+    .hero-card-main::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity: 0.025;
+      border-radius: inherit;
+      pointer-events: none;
+    }
+
+    .hc-avatar {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, #5D7052, #8AAD7B);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Fraunces', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .hc-title {
+      font-family: 'Fraunces', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--fg);
+      margin-bottom: 0.3rem;
+    }
+
+    .hc-subtitle {
+      font-size: 0.82rem;
+      color: var(--muted-fg);
+      margin-bottom: 1rem;
+    }
+
+    .hc-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      background: rgba(93, 112, 82, 0.1);
+      color: var(--primary);
+      padding: 0.3rem 0.8rem;
+      border-radius: 9999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .hc-line {
+      height: 8px;
+      background: var(--muted);
+      border-radius: 9999px;
+      margin-bottom: 0.5rem;
+    }
+
+    .hc-line:last-child {
+      width: 70%;
+    }
+
+    .hero-float-card {
+      position: absolute;
+      background: white;
+      border-radius: 1.2rem;
+      padding: 0.8rem 1.1rem;
+      box-shadow: var(--shadow-float);
+      border: 1px solid rgba(222, 216, 207, 0.5);
+      font-size: 0.82rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .hfc-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #4CAF50;
+      flex-shrink: 0;
+    }
+
+    .hfc-1 {
+      bottom: -1.5rem;
+      left: -2rem;
+      color: var(--fg);
+    }
+
+    .hfc-2 {
+      top: -1.2rem;
+      right: -1rem;
+      color: var(--primary);
+      background: rgba(93, 112, 82, 0.06);
+      border-color: rgba(93, 112, 82, 0.2);
+    }
+
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        display: none;
+      }
+
+      .hero-stats {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* ---- COUNTRIES STRIP ---- */
+    .countries-strip {
+      background: var(--muted);
+      padding: 1.2rem 1.5rem;
+      overflow: hidden;
+    }
+
+    .countries-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .cs-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--muted-fg);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+    }
+
+    .cs-divider {
+      width: 1px;
+      height: 20px;
+      background: var(--border);
+    }
+
+    .cs-flags {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .cs-flag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: white;
+      border-radius: 9999px;
+      padding: 0.3rem 0.8rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--fg);
+      border: 1px solid rgba(222, 216, 207, 0.5);
+    }
+
+    /* ---- SECTION COMMONS ---- */
+    section {
+      padding: 5rem 1.5rem;
+    }
+
+    .section-tag {
+      display: inline-block;
+      background: rgba(193, 140, 93, 0.12);
+      color: var(--secondary);
+      border-radius: 9999px;
+      padding: 0.3rem 0.9rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .section-heading {
+      color: var(--fg);
+      margin-bottom: 1rem;
+    }
+
+    .section-sub {
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin-bottom: 3rem;
+    }
+
+    /* ---- ABOUT SUMMARY ---- */
+    .about-section {
+      background: var(--muted);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-blob {
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      background: rgba(193, 140, 93, 0.12);
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      right: -80px;
+      top: -80px;
+      filter: blur(50px);
+      pointer-events: none;
+    }
+
+    .about-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-visual {
+      position: relative;
+    }
+
+    .about-img-wrap {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      max-width: 380px;
+      background: rgba(93, 112, 82, 0.12);
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-icon-center {
+      width: 100px;
+      height: 100px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-icon-center svg {
+      width: 48px;
+      height: 48px;
+      fill: white;
+    }
+
+    .about-badge-float {
+      position: absolute;
+      bottom: 1rem;
+      right: -1rem;
+      background: white;
+      border-radius: 1.2rem;
+      padding: 0.9rem 1.2rem;
+      box-shadow: var(--shadow-float);
+      border: 1px solid rgba(222, 216, 207, 0.5);
+      text-align: center;
+    }
+
+    .abf-num {
+      font-family: 'Fraunces', serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--secondary);
+      line-height: 1;
+      display: block;
+    }
+
+    .abf-label {
+      font-size: 0.75rem;
+      color: var(--muted-fg);
+      font-weight: 600;
+    }
+
+    .about-points {
+      list-style: none;
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .about-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.7rem;
+    }
+
+    .ap-dot {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: rgba(93, 112, 82, 0.12);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+
+    .ap-dot svg {
+      width: 12px;
+      height: 12px;
+      fill: var(--primary);
+    }
+
+    .ap-text {
+      font-size: 0.92rem;
+      color: var(--muted-fg);
+    }
+
+    .ap-text strong {
+      color: var(--fg);
+    }
+
+    @media (max-width: 900px) {
+      .about-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .about-visual {
+        display: none;
+      }
+    }
+
+    /* ---- SERVICES ---- */
+    .services-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: white;
+      border: 1px solid rgba(222, 216, 207, 0.55);
+      padding: 1.8rem;
+      box-shadow: var(--shadow-soft);
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card:nth-child(1) {
+      border-radius: 4rem 2rem 2rem 2rem;
+    }
+
+    .service-card:nth-child(2) {
+      border-radius: 2rem 2rem 4rem 2rem;
+    }
+
+    .service-card:nth-child(3) {
+      border-radius: 2rem 4rem 2rem 2rem;
+    }
+
+    .service-card:nth-child(4) {
+      border-radius: 2rem 2rem 2rem 4rem;
+    }
+
+    .service-card:nth-child(5) {
+      border-radius: 3rem 2rem 3rem 2rem;
+    }
+
+    .service-card:nth-child(6) {
+      border-radius: 2rem 3rem 2rem 3rem;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -10px rgba(93, 112, 82, 0.15);
+    }
+
+    .sc-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 1rem;
+      background: rgba(93, 112, 82, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.2rem;
+      transition: all 0.3s;
+    }
+
+    .service-card:hover .sc-icon {
+      background: var(--primary);
+    }
+
+    .sc-icon svg {
+      width: 26px;
+      height: 26px;
+      fill: var(--primary);
+      transition: fill 0.3s;
+    }
+
+    .service-card:hover .sc-icon svg {
+      fill: white;
+    }
+
+    .sc-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--fg);
+      margin-bottom: 0.5rem;
+    }
+
+    .sc-desc {
+      font-size: 0.88rem;
+      color: var(--muted-fg);
+      line-height: 1.65;
+    }
+
+    .sc-tag {
+      display: inline-block;
+      background: rgba(193, 140, 93, 0.1);
+      color: var(--secondary);
+      border-radius: 9999px;
+      padding: 0.2rem 0.7rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      margin-top: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    @media (max-width: 900px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ---- WHY TRUST US ---- */
+    .trust-section {
+      background: rgba(93, 112, 82, 0.04);
+    }
+
+    .trust-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.4rem;
+    }
+
+    .trust-card {
+      background: white;
+      border: 1px solid rgba(222, 216, 207, 0.55);
+      border-radius: 2rem;
+      padding: 1.8rem;
+      box-shadow: var(--shadow-soft);
+      transition: all 0.3s;
+    }
+
+    .trust-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 36px -8px rgba(93, 112, 82, 0.15);
+    }
+
+    .tc-num {
+      font-family: 'Fraunces', serif;
+      font-size: 2.6rem;
+      font-weight: 800;
+      color: var(--accent);
+      display: block;
+      line-height: 1;
+      margin-bottom: 0.4rem;
+      transition: all 0.3s;
+    }
+
+    .trust-card:hover .tc-num {
+      color: var(--primary);
+      transform: scale(1.05);
+    }
+
+    .tc-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--fg);
+      margin-bottom: 0.4rem;
+    }
+
+    .tc-desc {
+      font-size: 0.85rem;
+      color: var(--muted-fg);
+    }
+
+    @media (max-width: 900px) {
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ---- STATS ---- */
+    .stats-section {
+      background: var(--primary);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stats-section p {
+      color: rgba(243, 244, 241, 0.75);
+    }
+
+    .stats-blob {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      pointer-events: none;
+    }
+
+    .sb1 {
+      width: 400px;
+      height: 400px;
+      top: -150px;
+      right: -100px;
+      filter: blur(40px);
+    }
+
+    .sb2 {
+      width: 300px;
+      height: 300px;
+      bottom: -100px;
+      left: -80px;
+      filter: blur(40px);
+    }
+
+    .stats-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .stat-item {}
+
+    .stat-num {
+      font-family: 'Fraunces', serif;
+      font-size: 3rem;
+      font-weight: 800;
+      color: white;
+      display: block;
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+
+    .stat-label {
+      font-size: 0.88rem;
+      color: rgba(243, 244, 241, 0.78);
+      font-weight: 600;
+    }
+
+    @media (max-width: 700px) {
+      .stats-inner {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* ---- COUNTRIES ---- */
+    .countries-section {
+      background: var(--muted);
+    }
+
+    .countries-grid {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1rem;
+    }
+
+    .country-card {
+      background: white;
+      border: 1px solid rgba(222, 216, 207, 0.6);
+      border-radius: 1.4rem;
+      padding: 1.2rem 1rem;
+      text-align: center;
+      box-shadow: var(--shadow-soft);
+      transition: all 0.3s;
+      cursor: default;
+    }
+
+    .country-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-float);
+    }
+
+    .cc-flag {
+      font-size: 1.8rem;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    .cc-name {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--fg);
+    }
+
+    /* ---- TESTIMONIALS ---- */
+    .testimonials-section {}
+
+    .testimonials-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .testi-card {
+      background: white;
+      border: 1px solid rgba(222, 216, 207, 0.55);
+      border-radius: 2rem;
+      padding: 1.8rem;
+      box-shadow: var(--shadow-soft);
+      transition: all 0.3s;
+      position: relative;
+    }
+
+    .testi-card:hover {
+      transform: rotate(0.8deg) translateY(-3px);
+      box-shadow: var(--shadow-float);
+    }
+
+    .testi-stars {
+      display: flex;
+      gap: 0.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .testi-star {
+      color: #F5A623;
+      font-size: 0.9rem;
+    }
+
+    .testi-quote {
+      font-size: 0.92rem;
+      color: var(--muted-fg);
+      line-height: 1.75;
+      margin-bottom: 1.4rem;
+      font-style: italic;
+    }
+
+    .testi-author {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .ta-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .ta-name {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--fg);
+    }
+
+    .ta-detail {
+      font-size: 0.78rem;
+      color: var(--muted-fg);
+    }
+
+    .testi-badge {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.2rem;
+      background: rgba(93, 112, 82, 0.08);
+      color: var(--primary);
+      border-radius: 9999px;
+      padding: 0.25rem 0.7rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+
+    @media (max-width: 900px) {
+      .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ---- APPRECIATION ---- */
+    .appreciation-section {
+      background: rgba(230, 220, 205, 0.35);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .appr-blob {
+      position: absolute;
+      background: rgba(193, 140, 93, 0.1);
+      border-radius: 40% 60% 70% 30% / 40% 70% 30% 60%;
+      pointer-events: none;
+      filter: blur(50px);
+    }
+
+    .appr-b1 {
+      width: 350px;
+      height: 350px;
+      top: -80px;
+      left: 10%;
+    }
+
+    .appr-b2 {
+      width: 280px;
+      height: 280px;
+      bottom: -60px;
+      right: 10%;
+    }
+
+    .appr-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .appr-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: rgba(193, 140, 93, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+    }
+
+    .appr-icon svg {
+      width: 36px;
+      height: 36px;
+      fill: var(--secondary);
+    }
+
+    .appr-inner h2 {
+      margin-bottom: 1rem;
+    }
+
+    .appr-inner p {
+      font-size: 1.05rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    /* ---- FINAL CTA ---- */
+    .cta-section {
+      background: var(--fg);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-blob {
+      position: absolute;
+      background: rgba(93, 112, 82, 0.2);
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      pointer-events: none;
+      filter: blur(60px);
+    }
+
+    .cta-b1 {
+      width: 500px;
+      height: 500px;
+      top: -200px;
+      left: -100px;
+    }
+
+    .cta-b2 {
+      width: 400px;
+      height: 400px;
+      bottom: -150px;
+      right: -100px;
+      background: rgba(193, 140, 93, 0.15);
+      border-radius: 40% 60% 70% 30% / 40% 70% 30% 60%;
+    }
+
+    .cta-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-inner h2 {
+      color: white;
+      margin-bottom: 1rem;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+    }
+
+    .cta-inner p {
+      color: rgba(240, 235, 229, 0.75);
+      font-size: 1.05rem;
+      margin-bottom: 2.2rem;
+    }
+
+    .cta-btns {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-white {
+      background: white;
+      color: var(--fg);
+    }
+
+    .btn-white:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-ghost-white {
+      background: transparent;
+      color: white;
+      border: 2px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .btn-ghost-white:hover {
+      background: rgba(255, 255, 255, 0.08);
+      transform: scale(1.04);
+    }
+
+    /* ---- FOOTER ---- */
+    footer {
+      background: #1A1A14;
+      color: rgba(240, 235, 229, 0.7);
+      padding: 4rem 1.5rem 2rem;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand-name {
+      font-family: 'Fraunces', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-logo-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer-logo-icon svg {
+      width: 16px;
+      height: 16px;
+      fill: white;
+    }
+
+    .footer-desc {
+      font-size: 0.85rem;
+      line-height: 1.7;
+      margin-bottom: 1.4rem;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 0.6rem;
+    }
+
+    .footer-social {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.07);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(240, 235, 229, 0.7);
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+
+    .footer-social:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    .footer-col-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: rgba(240, 235, 229, 0.4);
+      margin-bottom: 1rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .footer-links a {
+      font-size: 0.88rem;
+      color: rgba(240, 235, 229, 0.65);
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-contact-item svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--primary);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 0 auto;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      padding-top: 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-copy {
+      font-size: 0.82rem;
+      color: rgba(240, 235, 229, 0.4);
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-bottom-links a {
+      font-size: 0.82rem;
+      color: rgba(240, 235, 229, 0.4);
+      transition: color 0.2s;
+    }
+
+    .footer-bottom-links a:hover {
+      color: rgba(240, 235, 229, 0.75);
+    }
+
+    @media (max-width: 900px) {
+      .footer-inner {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Counters */
+    .counting {
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
+    <button class="mobile-close" id="menuClose" aria-label="Close menu">✕</button>
+    <a href="./about.html">About</a>
+    <a href="./services.html">Services</a>
+    <a href="./testimonials.html">Testimonials</a>
+    <a href="./contact.html">Contact</a>
+    <a href="./contact.html" class="btn btn-primary btn-lg" style="margin-top:0.5rem">Get Consultation</a>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="./index.html" class="nav-logo" aria-label="SOPmandu Home">
+        <div class="nav-logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+          </svg>
+        </div>
+        <span class="nav-logo-text">SOPmandu</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./testimonials.html">Testimonials</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./contact.html" class="nav-cta nav-cta-desktop">Get Consultation</a></li>
+      </ul>
+      <button class="hamburger" id="menuOpen" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-blob-1" aria-hidden="true"></div>
+    <div class="hero-blob-2" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-tag" aria-label="Feature badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+          </svg>
+          Trusted by 2,000+ Students Worldwide
+        </div>
+        <h1 id="hero-heading" class="hero-headline">
+          Your dream university<br>starts with the<br><em>right story.</em>
+        </h1>
+        <p class="hero-desc">We craft compelling Statements of Purpose, motivation letters, and scholarship essays that
+          help students secure admissions at top universities worldwide. Over 8 years of expertise. Over 2,000 success
+          stories.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+              <path
+                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+            Free Consultation
+          </a>
+          <a href="#services" class="btn btn-outline btn-lg">View Our Services</a>
+        </div>
+        <div class="hero-stats" role="list" aria-label="Key statistics">
+          <div class="hero-stat" role="listitem">
+            <span class="hero-stat-num counting" data-target="2000" data-suffix="+">2000+</span>
+            <span class="hero-stat-label">Students Helped</span>
+          </div>
+          <div class="hero-stat" role="listitem">
+            <span class="hero-stat-num counting" data-target="95" data-suffix="%">95%</span>
+            <span class="hero-stat-label">Acceptance Rate</span>
+          </div>
+          <div class="hero-stat" role="listitem">
+            <span class="hero-stat-num counting" data-target="30" data-suffix="+">30+</span>
+            <span class="hero-stat-label">Countries Served</span>
+          </div>
+          <div class="hero-stat" role="listitem">
+            <span class="hero-stat-num counting" data-target="8" data-suffix=" yrs">8 yrs</span>
+            <span class="hero-stat-label">In Operation</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card-main">
+          <div class="hc-avatar">A</div>
+          <div class="hc-title">Admitted to University of Toronto</div>
+          <div class="hc-subtitle">MSc Computer Science · Class of 2025</div>
+          <div class="hc-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Scholarship Awarded
+          </div>
+          <div class="hc-line" style="width: 100%"></div>
+          <div class="hc-line" style="width: 85%"></div>
+          <div class="hc-line"></div>
+        </div>
+        <div class="hero-float-card hfc-1">
+          <div class="hfc-dot"></div>
+          SOP delivered in 48 hours
+        </div>
+        <div class="hero-float-card hfc-2">
+          ✦ 100% Original Writing
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTRIES STRIP -->
+  <div class="countries-strip" aria-label="Countries we serve">
+    <div class="countries-inner">
+      <span class="cs-label">We serve</span>
+      <div class="cs-divider" aria-hidden="true"></div>
+      <div class="cs-flags">
+        <span class="cs-flag">🇺🇸 USA</span>
+        <span class="cs-flag">🇬🇧 UK</span>
+        <span class="cs-flag">🇨🇦 Canada</span>
+        <span class="cs-flag">🇦🇺 Australia</span>
+        <span class="cs-flag">🇩🇪 Germany</span>
+        <span class="cs-flag">🇯🇵 Japan</span>
+        <span class="cs-flag">🇳🇿 New Zealand</span>
+        <span class="cs-flag">🇰🇷 South Korea</span>
+        <span class="cs-flag">🇸🇪 Nordic</span>
+        <span class="cs-flag">🌍 + More</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT SUMMARY -->
+  <section class="about-section" id="about" aria-labelledby="about-heading">
+    <div class="about-blob" aria-hidden="true"></div>
+    <div class="about-inner">
+      <div class="about-visual" aria-hidden="true">
+        <div class="about-img-wrap">
+          <div class="about-icon-center">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path
+                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+            </svg>
+          </div>
+        </div>
+        <div class="about-badge-float">
+          <span class="abf-num">8+</span>
+          <span class="abf-label">Years of<br>Experience</span>
+        </div>
+      </div>
+      <div>
+        <span class="section-tag">About Us</span>
+        <h2 class="section-heading" id="about-heading">We tell your story so universities <em
+            style="font-style:italic;color:var(--secondary)">listen.</em></h2>
+        <p style="margin-bottom:1.2rem;">SOPmandu was founded with one mission: to give every ambitious student the
+          best possible chance at their dream university, regardless of where they come from. We specialize in crafting
+          deeply personalized, university-specific application documents that convey your unique voice, experiences, and
+          goals.</p>
+        <p>Every document we write is built from scratch — no templates, no recycled phrases. Just your authentic story,
+          shaped by expert writers who understand exactly what top admissions committees look for.</p>
+        <ul class="about-points" aria-label="Key qualities">
+          <li class="about-point">
+            <div class="ap-dot" aria-hidden="true"><svg viewBox="0 0 24 24">
+                <path d="M5 13l4 4L19 7" />
+              </svg></div>
+            <span class="ap-text"><strong>University-specific research</strong> — we study your target program before
+              writing a single word.</span>
+          </li>
+          <li class="about-point">
+            <div class="ap-dot" aria-hidden="true"><svg viewBox="0 0 24 24">
+                <path d="M5 13l4 4L19 7" />
+              </svg></div>
+            <span class="ap-text"><strong>Human-written, plagiarism-free</strong> — every document is original,
+              verified, and crafted with care.</span>
+          </li>
+          <li class="about-point">
+            <div class="ap-dot" aria-hidden="true"><svg viewBox="0 0 24 24">
+                <path d="M5 13l4 4L19 7" />
+              </svg></div>
+            <span class="ap-text"><strong>Ongoing support</strong> — unlimited revisions until you're fully satisfied
+              with your document.</span>
+          </li>
+          <li class="about-point">
+            <div class="ap-dot" aria-hidden="true"><svg viewBox="0 0 24 24">
+                <path d="M5 13l4 4L19 7" />
+              </svg></div>
+            <span class="ap-text"><strong>Fast turnaround</strong> — standard delivery in 3–5 days, express in 24–48
+              hours.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" aria-labelledby="services-heading">
+    <div class="container" style="text-align:center;margin-bottom:0.5rem;">
+      <span class="section-tag">What We Offer</span>
+      <h2 class="section-heading" id="services-heading">Every document you need,<br>written <em
+          style="font-style:italic;color:var(--primary)">perfectly.</em></h2>
+      <p class="section-sub" style="margin:0 auto 3rem;">From your first SOP to your visa application, we cover every
+        written document in your study abroad journey with precision and personalization.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="sc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+        </div>
+        <h3 class="sc-title">Statement of Purpose (SOP)</h3>
+        <p class="sc-desc">A compelling narrative that weaves your academic journey, professional goals, and personal
+          motivations into a story that resonates with admissions committees.</p>
+        <span class="sc-tag">Most Popular</span>
+      </article>
+      <article class="service-card">
+        <div class="sc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <h3 class="sc-title">Motivation Letter Writing</h3>
+        <p class="sc-desc">Persuasive motivation letters tailored to each program, showcasing why you're the ideal
+          candidate and how this opportunity aligns with your long-term vision.</p>
+        <span class="sc-tag">European Focus</span>
+      </article>
+      <article class="service-card">
+        <div class="sc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 class="sc-title">Scholarship Essays</h3>
+        <p class="sc-desc">Strategic scholarship applications that highlight your achievements, values, and potential
+          impact — crafted to stand out in highly competitive award pools.</p>
+        <span class="sc-tag">High Value</span>
+      </article>
+      <article class="service-card">
+        <div class="sc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+          </svg>
+        </div>
+        <h3 class="sc-title">Research Proposals</h3>
+        <p class="sc-desc">Academically rigorous research proposals for PhD and research master's applications, clearly
+          articulating your methodology, objectives, and contribution to the field.</p>
+        <span class="sc-tag">PhD & Research</span>
+      </article>
+      <article class="service-card">
+        <div class="sc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+          </svg>
+        </div>
+        <h3 class="sc-title">Appeal Letters</h3>
+        <p class="sc-desc">Professionally written appeal letters that present a strong, well-reasoned case for
+          reconsideration of your application with renewed evidence and clarity.</p>
+        <span class="sc-tag">Second Chance</span>
+      </article>
+      <article class="service-card">
+        <div class="sc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 class="sc-title">Visa SOPs & Dependent SOPs</h3>
+        <p class="sc-desc">Legally compliant visa SOPs that clearly communicate your genuine intent, financial
+          stability, and strong ties to your home country for successful visa approvals.</p>
+        <span class="sc-tag">Visa Support</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- WHY TRUST US -->
+  <section class="trust-section" aria-labelledby="trust-heading">
+    <div class="container" style="text-align:center;margin-bottom:0.5rem;">
+      <span class="section-tag">Why Choose Us</span>
+      <h2 class="section-heading" id="trust-heading">Why students trust<br><em
+          style="font-style:italic;color:var(--primary)">SOPmandu</em></h2>
+      <p class="section-sub" style="margin:0 auto 3rem;">We don't just write documents. We partner with you to build the
+        strongest possible application.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-card">
+        <span class="tc-num">01</span>
+        <h3 class="tc-title">Deeply Personalized</h3>
+        <p class="tc-desc">Every document begins with a detailed discovery interview. Your SOP reflects your unique
+          voice, experiences, and ambitions — never a template.</p>
+      </div>
+      <div class="trust-card">
+        <span class="tc-num">02</span>
+        <h3 class="tc-title">University-Specific Research</h3>
+        <p class="tc-desc">We research your target program, professors, and culture before writing. The result?
+          Documents that show you've genuinely done your homework.</p>
+      </div>
+      <div class="trust-card">
+        <span class="tc-num">03</span>
+        <h3 class="tc-title">Fast & Reliable Delivery</h3>
+        <p class="tc-desc">Standard delivery in 3–5 business days, with 24–48 hour express options available. We've
+          never missed a deadline.</p>
+      </div>
+      <div class="trust-card">
+        <span class="tc-num">04</span>
+        <h3 class="tc-title">Expert Writers</h3>
+        <p class="tc-desc">Our team includes former admissions consultants, academic writers with PhDs, and specialists
+          in each destination country's requirements.</p>
+      </div>
+      <div class="trust-card">
+        <span class="tc-num">05</span>
+        <h3 class="tc-title">Unlimited Revisions</h3>
+        <p class="tc-desc">We work until you're completely satisfied. Unlimited revision rounds are included — your
+          confidence in the final document is our measure of success.</p>
+      </div>
+      <div class="trust-card">
+        <span class="tc-num">06</span>
+        <h3 class="tc-title">100% Original, Plagiarism-Free</h3>
+        <p class="tc-desc">Every document is written from scratch and verified for originality. We provide a plagiarism
+          report on request. Zero AI-generated filler.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section class="stats-section" aria-labelledby="stats-heading">
+    <div class="stats-blob sb1" aria-hidden="true"></div>
+    <div class="stats-blob sb2" aria-hidden="true"></div>
+    <div class="container" style="text-align:center;margin-bottom:3rem;position:relative;z-index:1;">
+      <span class="section-tag" style="background:rgba(255,255,255,0.15);color:rgba(243,244,241,0.9);">Our Impact</span>
+      <h2 style="color:white;" id="stats-heading">Numbers that speak<br>for themselves</h2>
+    </div>
+    <div class="stats-inner" role="list" aria-label="Achievement statistics">
+      <div class="stat-item" role="listitem">
+        <span class="stat-num counting" data-target="2000" data-suffix="+">2,000+</span>
+        <span class="stat-label">Students Served</span>
+      </div>
+      <div class="stat-item" role="listitem">
+        <span class="stat-num counting" data-target="5000" data-suffix="+">5,000+</span>
+        <span class="stat-label">Documents Completed</span>
+      </div>
+      <div class="stat-item" role="listitem">
+        <span class="stat-num counting" data-target="95" data-suffix="%">95%</span>
+        <span class="stat-label">Client Satisfaction</span>
+      </div>
+      <div class="stat-item" role="listitem">
+        <span class="stat-num counting" data-target="30" data-suffix="+">30+</span>
+        <span class="stat-label">Countries Reached</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTRIES SECTION -->
+  <section class="countries-section" id="countries" aria-labelledby="countries-heading">
+    <div class="container" style="text-align:center;margin-bottom:0.5rem;">
+      <span class="section-tag">Global Reach</span>
+      <h2 class="section-heading" id="countries-heading">We help students reach<br>universities <em
+          style="font-style:italic;color:var(--secondary)">worldwide.</em></h2>
+      <p class="section-sub" style="margin:0 auto 3rem;">From North America to East Asia, our writers are versed in the
+        specific expectations of each country's admissions process.</p>
+    </div>
+    <div class="countries-grid" role="list" aria-label="Countries we serve">
+      <div class="country-card" role="listitem"><span class="cc-flag">🇺🇸</span><span class="cc-name">USA</span></div>
+      <div class="country-card" role="listitem"><span class="cc-flag">🇬🇧</span><span class="cc-name">United
+          Kingdom</span></div>
+      <div class="country-card" role="listitem"><span class="cc-flag">🇨🇦</span><span class="cc-name">Canada</span>
+      </div>
+      <div class="country-card" role="listitem"><span class="cc-flag">🇦🇺</span><span class="cc-name">Australia</span>
+      </div>
+      <div class="country-card" role="listitem"><span class="cc-flag">🇳🇿</span><span class="cc-name">New
+          Zealand</span></div>
+      <div class="country-card" role="listitem"><span class="cc-flag">🇩🇪</span><span class="cc-name">Germany</span>
+      </div>
+      <div class="country-card" role="listitem"><span class="cc-flag">🇯🇵</span><span class="cc-name">Japan</span>
+      </div>
+      <div class="country-card" role="listitem"><span class="cc-flag">🇰🇷</span><span class="cc-name">South
+          Korea</span></div>
+      <div class="country-card" role="listitem"><span class="cc-flag">🇸🇪</span><span class="cc-name">Sweden</span>
+      </div>
+      <div class="country-card" role="listitem"><span class="cc-flag">🇳🇱</span><span
+          class="cc-name">Netherlands</span></div>
+      <div class="country-card" role="listitem"><span class="cc-flag">🇫🇷</span><span class="cc-name">France</span>
+      </div>
+      <div class="country-card" role="listitem"><span class="cc-flag">🇮🇪</span><span class="cc-name">Ireland</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section" id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="container" style="text-align:center;margin-bottom:0.5rem;">
+      <span class="section-tag">Student Stories</span>
+      <h2 class="section-heading" id="testimonials-heading">Words from students<br>who <em
+          style="font-style:italic;color:var(--primary)">made it.</em></h2>
+      <p class="section-sub" style="margin:0 auto 3rem;">Real experiences from real students who trusted us with their
+        most important applications.</p>
+    </div>
+    <div class="testimonials-grid">
+      <article class="testi-card">
+        <span class="testi-badge">🇨🇦 Canada</span>
+        <div class="testi-stars" aria-label="5 stars">
+          <span class="testi-star" aria-hidden="true">★</span><span class="testi-star" aria-hidden="true">★</span><span
+            class="testi-star" aria-hidden="true">★</span><span class="testi-star" aria-hidden="true">★</span><span
+            class="testi-star" aria-hidden="true">★</span>
+        </div>
+        <p class="testi-quote">"I applied to 4 Canadian universities and got into all 4, including my top choice —
+          University of British Columbia. My SOP was the strongest part of my application. I still read it and feel
+          proud."</p>
+        <div class="testi-author">
+          <div class="ta-avatar" style="background:linear-gradient(135deg,#5D7052,#8AAD7B);" aria-hidden="true">SR</div>
+          <div>
+            <div class="ta-name">Siddharth R.</div>
+            <div class="ta-detail">MSc Data Science · UBC, Canada</div>
+          </div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <span class="testi-badge">🇬🇧 UK</span>
+        <div class="testi-stars" aria-label="5 stars">
+          <span class="testi-star" aria-hidden="true">★</span><span class="testi-star" aria-hidden="true">★</span><span
+            class="testi-star" aria-hidden="true">★</span><span class="testi-star" aria-hidden="true">★</span><span
+            class="testi-star" aria-hidden="true">★</span>
+        </div>
+        <p class="testi-quote">"StoryPath helped me secure a partial scholarship at the University of Edinburgh. The
+          team understood exactly what the committee wanted. The fast delivery also saved me during last-minute
+          applications!"</p>
+        <div class="testi-author">
+          <div class="ta-avatar" style="background:linear-gradient(135deg,#C18C5D,#E0A870);" aria-hidden="true">FN</div>
+          <div>
+            <div class="ta-name">Fatima N.</div>
+            <div class="ta-detail">MBA · University of Edinburgh, UK</div>
+          </div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <span class="testi-badge">🇩🇪 Germany</span>
+        <div class="testi-stars" aria-label="5 stars">
+          <span class="testi-star" aria-hidden="true">★</span><span class="testi-star" aria-hidden="true">★</span><span
+            class="testi-star" aria-hidden="true">★</span><span class="testi-star" aria-hidden="true">★</span><span
+            class="testi-star" aria-hidden="true">★</span>
+        </div>
+        <p class="testi-quote">"German universities are incredibly specific about motivation letters. StoryPath knew
+          exactly what TU Munich expects and wrote something that felt professional yet personal. Got accepted in my
+          first round!"</p>
+        <div class="testi-author">
+          <div class="ta-avatar" style="background:linear-gradient(135deg,#A85448,#C07060);" aria-hidden="true">LK</div>
+          <div>
+            <div class="ta-name">Linh K.</div>
+            <div class="ta-detail">MEng Mechanical · TU Munich, Germany</div>
+          </div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <span class="testi-badge">🇺🇸 USA</span>
+        <div class="testi-stars" aria-label="5 stars">
+          <span class="testi-star" aria-hidden="true">★</span><span class="testi-star" aria-hidden="true">★</span><span
+            class="testi-star" aria-hidden="true">★</span><span class="testi-star" aria-hidden="true">★</span><span
+            class="testi-star" aria-hidden="true">★</span>
+        </div>
+        <p class="testi-quote">"The consultation call alone gave me so much clarity. They asked the right questions,
+          pulled out stories I didn't know were powerful, and turned them into an SOP that genuinely moved the
+          admissions officer."</p>
+        <div class="testi-author">
+          <div class="ta-avatar" style="background:linear-gradient(135deg,#4A6FA5,#6889C0);" aria-hidden="true">MA</div>
+          <div>
+            <div class="ta-name">Mohamed A.</div>
+            <div class="ta-detail">MS Biomedical Eng · Georgia Tech, USA</div>
+          </div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <span class="testi-badge">🇦🇺 Australia</span>
+        <div class="testi-stars" aria-label="5 stars">
+          <span class="testi-star" aria-hidden="true">★</span><span class="testi-star" aria-hidden="true">★</span><span
+            class="testi-star" aria-hidden="true">★</span><span class="testi-star" aria-hidden="true">★</span><span
+            class="testi-star" aria-hidden="true">★</span>
+        </div>
+        <p class="testi-quote">"I was reapplying after a rejection. StoryPath helped me completely rethink my story and
+          write a much stronger appeal + new SOP. I got admitted to Monash with a merit scholarship. Absolutely changed
+          my life."</p>
+        <div class="testi-author">
+          <div class="ta-avatar" style="background:linear-gradient(135deg,#6D7A3E,#8B9A50);" aria-hidden="true">PW</div>
+          <div>
+            <div class="ta-name">Priya W.</div>
+            <div class="ta-detail">MPH · Monash University, Australia</div>
+          </div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <span class="testi-badge">🇯🇵 Japan</span>
+        <div class="testi-stars" aria-label="5 stars">
+          <span class="testi-star" aria-hidden="true">★</span><span class="testi-star" aria-hidden="true">★</span><span
+            class="testi-star" aria-hidden="true">★</span><span class="testi-star" aria-hidden="true">★</span><span
+            class="testi-star" aria-hidden="true">★</span>
+        </div>
+        <p class="testi-quote">"Applying to Japan required a very different kind of writing — formal, structured,
+          research-focused. The team knew this and delivered a research proposal that matched exactly what my professor
+          at Osaka wanted."</p>
+        <div class="testi-author">
+          <div class="ta-avatar" style="background:linear-gradient(135deg,#786070,#9A7E90);" aria-hidden="true">YT</div>
+          <div>
+            <div class="ta-name">Yara T.</div>
+            <div class="ta-detail">PhD Chemistry · Osaka University, Japan</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- APPRECIATION SECTION -->
+  <section class="appreciation-section" aria-labelledby="appreciation-heading">
+    <div class="appr-blob appr-b1" aria-hidden="true"></div>
+    <div class="appr-blob appr-b2" aria-hidden="true"></div>
+    <div class="appr-inner">
+      <div class="appr-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+        </svg>
+      </div>
+      <span class="section-tag">A Note of Gratitude</span>
+      <h2 class="section-heading" id="appreciation-heading">Thank you for trusting<br>us with your dreams.</h2>
+      <p>Every student who shares their story with us reminds us why this work matters. Whether you're a
+        first-generation student, a career changer, or a scholar chasing the highest peaks — your courage to pursue
+        education across borders inspires us every day. We are honored to walk this path with you.</p>
+      <br>
+      <p style="font-style:italic;font-family:'Fraunces',serif;font-size:1.1rem;color:var(--fg);">"Your story is worth
+        telling. Let us help you tell it right."</p>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-section" aria-labelledby="cta-heading">
+    <div class="cta-blob cta-b1" aria-hidden="true"></div>
+    <div class="cta-blob cta-b2" aria-hidden="true"></div>
+    <div class="cta-inner">
+      <span class="section-tag"
+        style="background:rgba(255,255,255,0.12);color:rgba(243,244,241,0.9);margin-bottom:1.2rem;display:inline-block;">Start
+        Today</span>
+      <h2 id="cta-heading">Let's craft your<br>winning application.</h2>
+      <p>Your dream university is waiting. Book a free consultation today and let's build the story that gets you there.
+      </p>
+      <div class="cta-btns">
+        <a href="./contact.html" class="btn btn-white btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--primary)">
+            <path
+              d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
+          Book Free Consultation
+        </a>
+        <a href="./services.html" class="btn btn-ghost-white btn-lg">View All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" aria-label="Footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand-name">
+          <div class="footer-logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          SOPmandu
+        </div>
+        <p class="footer-desc">Professional SOP and application writing for ambitious students worldwide. Over 8 years
+          of experience. Over 2,000 admissions stories told — and counting.</p>
+        <div class="footer-socials" aria-label="Social media links">
+          <a href="#" class="footer-social" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+            </svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="WhatsApp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.123 1.529 5.853L.057 23.428a.5.5 0 00.604.61l5.698-1.453A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.66-.49-5.2-1.35L3.5 21.6l.96-3.24A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="#">Samples</a></li>
+          <li><a href="./testimonials.html">Testimonials</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links">
+          <li><a href="#services">SOP Writing</a></li>
+          <li><a href="#services">Motivation Letters</a></li>
+          <li><a href="#services">Scholarship Essays</a></li>
+          <li><a href="#services">Research Proposals</a></li>
+          <li><a href="#services">Appeal Letters</a></li>
+          <li><a href="#services">Visa SOPs</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact Us</div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <span>sopmandu.np@gmail.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+          </svg>
+          <span>+977 9808096477 (WhatsApp)</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+          </svg>
+          <span>Kathmandu, Nepal<br>Serving students globally</span>
+        </div>
+        <a href="./contact.html" class="btn btn-primary" style="margin-top:1.2rem;display:inline-flex;">Get Free
+          Consultation</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 SOPmandu. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Refund Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const menuOpen = document.getElementById('menuOpen');
+    const menuClose = document.getElementById('menuClose');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuOpen.addEventListener('click', () => {
+      mobileMenu.classList.add('open');
+      menuOpen.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    });
+    menuClose.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      menuOpen.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        menuOpen.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Counter animation
+    function animateCounter(el) {
+      const target = parseInt(el.dataset.target);
+      const suffix = el.dataset.suffix || '';
+      const duration = 1800;
+      const step = 16;
+      const increment = target / (duration / step);
+      let current = 0;
+
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          current = target;
+          clearInterval(timer);
+        }
+        el.textContent = Math.floor(current).toLocaleString() + suffix;
+      }, step);
+    }
+
+    // Intersection observer for counters
+    const counters = document.querySelectorAll('.counting');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.dataset.animated) {
+          entry.target.dataset.animated = 'true';
+          animateCounter(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(c => observer.observe(c));
+
+    // Scroll reveal
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.service-card, .trust-card, .testi-card, .country-card, .hero-stat').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
+      revealObserver.observe(el);
+    });
+  </script>
+</body>
+
+</html>
